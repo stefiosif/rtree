@@ -5,7 +5,7 @@ range:
 	py src/rangequeries.py output/rtree.txt data/ranges.txt
 
 knn:
-	py src/knnqueries.py output/rtree.txt data/knn.txt 10
+	py src/knnqueries.py output/rtree.txt data/knn.txt $(k)
 
 .PHONY: clean
 clean:
